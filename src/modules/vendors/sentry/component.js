@@ -14,7 +14,7 @@ Sentry.init({
         'call screen.orientation.lock', //weird android chrome error
         'Actions may not have an undefined "type" property. Have you misspelled a constant?', //if redux action have undefined field in it, can be safely ignored
         'Refused to evaluate a string as JavaScript because \'unsafe-eval\'',
-        'Cannot read property \'Sortable', //https://sentry.io/organizations/oblako-corp/issues/2170103500 
+        'Cannot read property \'Sortable', //https://sentry.io/organizations/buns-29/issues/2170103500 
     ],
     environment: `${target}-${process.env.NODE_ENV}`
 })

@@ -94,8 +94,8 @@ module.exports = ({ production, filename='[name].[contenthash]', sentry={} }, { 
 		//Sentry
 		...(production && !sentry?.disabled ? [
 			new SentryCliPlugin({
-				org: 'oblako-corp',
-				project: 'app',
+				org: process.env.SENTRY_ORG_NAME,
+				project: "raindrop",
 				authToken: process.env.SENTRY_AUTH_TOKEN, //required in CI environment
 				release: process.env.SENTRY_RELEASE,
 
